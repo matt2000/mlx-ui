@@ -6,32 +6,28 @@ A simple UI / Web / Frontend for MLX mlx-lm using Streamlit.
 
 ## Install
 
-```shell
-$ ./install.sh
-```
-
-Or to install using latest versions of the libs (may break functionality):
+Install dependencies using [uv](https://docs.astral.sh/uv/):
 
 ```shell
-$ ./install.sh refresh
+$ uv sync
 ```
 
 ## Update
 
-After fetching a newer version it's recommended to run again the installation script.
+After fetching a newer version, update dependencies:
 
 ```shell
-$ ./install.sh
+$ uv sync
 ```
 
 ## Run
 
 ```shell
-$ ./run.sh
+$ uv run streamlit run app.py
 ```
 
 You can also use a custom model.txt file (see [mlx-community](https://huggingface.co/mlx-community) for more models):
 
 ```shell
-$ ./run.sh --models mymodels.txt
+$ uv run streamlit run app.py -- --models mymodels.txt
 ```
