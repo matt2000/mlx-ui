@@ -7,3 +7,5 @@ __pycache__
 .ipynb*
 .history
 models.txt
+.python-version
+uv.lock
